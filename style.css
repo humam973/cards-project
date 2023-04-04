@@ -1,0 +1,140 @@
+* { 
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+} 
+
+body {
+background: #ecf2f8;
+font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+#allthecards{
+padding: 5% 5%;
+}
+
+.card {
+margin-bottom: 15px;
+padding: 22px;
+border-radius: 10px;
+box-shadow: 32px 39px 36px -45px rgba(0,0,0,0.75);
+font-size: 13px;
+}
+
+#bord-1 {
+background-color: #7541c8;
+color: white;
+position: relative;
+z-index: 0;
+}
+
+#bord-2 {
+   background-color: #48556a ; 
+   color: white;
+}
+
+#bord-3 {
+    background-color: white ;
+    color: #48556a;
+}
+
+#bord-4 {
+    background-color: #19212e ;
+    color: white;
+}
+
+#bord-5 {
+    background-color: white ;
+    color: #48556a ;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+   position: relative;
+    z-index: 2  ;
+} 
+
+.header img {
+    border-radius: 50%;
+    border: white 2px solid;
+    margin-right: 10px;
+}
+
+.card h4 {
+    margin-bottom: 20px ;
+    font-size: 1.1rem;
+}
+
+.card p {
+    opacity: 70%;
+}
+
+.header .name{
+opacity: 100%;
+font-size: 0.9rem;
+}
+
+#quote {
+ position: absolute;
+ right: 10%;  
+ top: 0; 
+ z-index: 1;
+}
+
+@media (min-width : 576px ){
+
+#allthecards {
+    display: flex;
+    max-width: 9 00px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+#bord-5 {
+flex-basis: 25%;
+}
+
+
+#the-left-cards {
+    display: flex;
+   flex-direction: column;
+    flex-basis: 75%;
+}
+
+#the-top-cards {
+display: flex;
+flex-basis: 50%;
+
+}
+
+#the-bottom-cards{
+display: flex;
+flex-basis: 50%;
+
+}
+
+#bord-1 {
+    flex-basis: 65%;
+    }
+    
+    #bord-2 {
+    flex-basis: 35%;
+    }
+    
+    #bord-3 {
+    flex-basis: 35%;  
+    }
+    
+    #bord-4 {
+     flex-basis: 65%;
+    }
+
+#the-left-cards .card {
+ margin-right: 15px;
+}
+
+}
